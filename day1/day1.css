@@ -1,0 +1,52 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100%;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    cursor: pointer;
+    margin: 10px;
+    height: 80vh;
+    width: 6.5%;
+    contain: content;
+    border-radius: 50px 50px 50px 50px;
+    /* flex: 0.5; */
+    position: relative;
+    transition: all 0.8s ease-in;
+}
+
+img{
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+.img.active{
+    /* flex: 5; */
+    width: 67%;
+}
+.img h5{
+    color: rgb(255, 255, 255);
+    /* background:transparent; */
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    font-size: 150%;
+    opacity: 0;
+
+}
+.img.active h5{
+    /* z-index: 1; */
+    opacity: 1;
+    transition: all 1s ease-in 0.4s;
+}
