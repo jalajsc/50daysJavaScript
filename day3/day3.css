@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    /* overflow: hidden; */
+}
+.container{
+    overflow-x: hidden;
+    /* margin: 0px;
+    padding: 0px; */
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    transform-origin: top left;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    background-color: rgb(255, 134, 134);
+    left: -100px;
+    top: -100px;
+    border-radius: 50%;
+    transform-origin: center;
+    transition: all 0.5s ease;
+}
+.circle .open{
+    margin-left: 60%;
+    margin-top: 65%;
+    position: absolute;
+}
+.circle .close{
+    transform: rotate(80deg);
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 62%; 
+}
+
+.front{
+    margin: 0px;
+    /* z-index: 1px; */
+    width: 67%;
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    color: rgb(69, 69, 69);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.front h1{
+    color: rgba(0, 0, 0, 0.886);
+}
+.front h5{
+    color: rgba(34, 34, 34, 0.833);
+    font-weight: 100;
+    font-style: italic;
+}
+.front h2{
+    font-weight: 500;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.897);
+}
+.front h4{
+    font-weight: 490;
+    font-size: 14px;
+    line-height: 23px;
+}
+.front img{
+    width: 100%;
+}
+.back{
+    position: fixed;
+    top: 75%;
+    left: 3%;
+    line-height: 50px;
+    transform: translateX(-300px);
+    transition: all 0.5s ease-in;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+
